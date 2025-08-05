@@ -287,8 +287,13 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
+      const hero = document.querySelector('.hero');
+      setTimeout(() => {
+        hero.classList.add('animate');
+      }, 100); 
+      
       const counters = document.querySelectorAll('.counter');
-      const speed = 400; // lower = faster
+      const speed = 400; 
   
       const animate = () => {
         counters.forEach(counter => {

@@ -68,3 +68,18 @@ body {
   .card-title {
     font-weight: 600;
   }
+
+
+  @keyframes swagScale {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  
+  .get-in-touch-btn {
+    animation: swagScale 2.5s ease-in-out infinite;
+  }
+  

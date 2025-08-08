@@ -5,7 +5,7 @@ body {
     height: 50px;
   }
   .hero {
-    background: url('https://muhammaditransport.com/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-06-at-22.54.28-1024x1024.jpg') no-repeat center center/cover;
+    background: url('https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicle-groups/commercial-pages/homepage/01-images-visid/chassis/2024-commercial-segment-chassis-cutaways-04.png?imwidth=1200') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 6rem 1rem;
@@ -85,3 +85,67 @@ body {
   
 
   
+
+  #logo img{
+    /* border-radius: 10px; */
+    width: 100px;
+    height: 60px; 
+    background: linear-gradient(to left,rgb(231, 207, 207),white);
+  }
+  
+
+
+ /* .banner-page {
+
+  font-weight: bold;
+  font-style: oblique;
+  text-shadow: 0px 3px 0px #9f3838;
+
+} */
+
+/* 
+.hero-heading {
+  direction: rtl;
+  text-align: left;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: rgb(181, 20, 20);
+  font-style: italic;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  margin-left: 140px;
+  margin-bottom: 100px;
+} */
+
+
+
+.banner-page{
+  margin-left: -500px;
+  margin-bottom: 100px;
+  color: black !important;
+  font-weight: bold;
+  font-size: 40px;
+  text-shadow: 2px 2px 6px rgba(190, 112, 112, 0.564);
+
+}
+
+
+
+
+
+
+
+
+.gallery-img-wrapper {
+  height: 150px; /* You can change this height as per design */
+  overflow: hidden;
+  border-radius: 0.25rem;
+}
+
+.gallery-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+

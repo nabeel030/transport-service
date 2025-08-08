@@ -6,13 +6,23 @@ body {
   }
   .hero {
     background: url('https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicle-groups/commercial-pages/homepage/01-images-visid/chassis/2024-commercial-segment-chassis-cutaways-04.png?imwidth=1200') no-repeat center center/cover;
-    color: white;
+    /* background-image: url('your-image.jpg'); replace with actual path */
+    background-size: cover; /* ensures full coverage */
+    background-position: center; /* keeps center in view */
+    background-repeat: no-repeat;
+    min-height: 70vh; /* or auto if you want content-based height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 15px;
+    /* color: white;
     text-align: center;
     padding: 6rem 1rem;
 
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition: opacity 1s ease-out, transform 1s ease-out; */
   }
   
   .hero.animate {
@@ -119,13 +129,17 @@ body {
 
 
 .banner-page{
-  margin-left: -500px;
-  margin-bottom: 100px;
   color: black !important;
-  font-weight: bold;
-  font-size: 40px;
+  font-weight:bold;
+  text-align: left;
+  margin-left: 20px;
+  font-size: clamp(18px, 2vw, 44x);
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: auto;
   text-shadow: 2px 2px 6px rgba(190, 112, 112, 0.564);
-
+  text-wrap: balance; 
 }
 
 
@@ -148,4 +162,22 @@ body {
 }
 
 
+@media (max-width: 768px) {
+  .hero {
+    background-position: top center; /* adjust to keep top visible */
+    min-height: 50vh; /* reduce height on smaller devices */
+    padding: 40px 10px;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+  .get-in-touch-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
 
+@media (max-width: 576px){
+  .banner-page br{ display:none; }
+}

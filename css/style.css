@@ -2,7 +2,8 @@ body {
     font-family: 'Poppins', sans-serif;
   }
   .navbar-brand img {
-    height: 50px;
+    width: 130px;
+    height: 90px;
   }
   .hero {
     background: url('https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicle-groups/commercial-pages/homepage/01-images-visid/chassis/2024-commercial-segment-chassis-cutaways-04.png?imwidth=1200') no-repeat center center/cover;
@@ -92,17 +93,7 @@ body {
   .get-in-touch-btn {
     animation: swagScale 2.5s ease-in-out infinite;
   }
-  
 
-  
-
-  #logo img{
-    /* border-radius: 10px; */
-    width: 100px;
-    height: 60px; 
-    background: linear-gradient(to left,rgb(231, 207, 207),white);
-  }
-  
 
 
  /* .banner-page {
@@ -150,7 +141,8 @@ body {
 
 
 .gallery-img-wrapper {
-  height: 150px; /* You can change this height as per design */
+  /* height: 150px; You can change this height as per design */
+  height: 100%; /* You can change this height as per design */
   overflow: hidden;
   border-radius: 0.25rem;
 }
@@ -158,7 +150,13 @@ body {
 .gallery-img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
+}
+
+.hero h1 {
+  text-align: left;
+  font-size: 35px;
+  margin-left: 30px;
 }
 
 
@@ -168,10 +166,7 @@ body {
     min-height: 50vh; /* reduce height on smaller devices */
     padding: 40px 10px;
   }
-  .hero h1 {
-    font-size: 1.8rem;
-    line-height: 1.3;
-  }
+
   .get-in-touch-btn {
     font-size: 0.9rem;
     padding: 8px 16px;
